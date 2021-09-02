@@ -5,7 +5,7 @@ import { FormaAService } from 'src/app/services/forma-a.service';
 @Component({
   selector: 'app-forma-a',
   templateUrl: './forma-a.component.html',
-  styleUrls: ['./forma-a.component.css']
+  styleUrls: ['./forma-a.component.css', './nicepage.css']
 })
 export class FormaAComponent implements OnInit, OnDestroy {
 

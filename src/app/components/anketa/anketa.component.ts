@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-anketa',
   templateUrl: './anketa.component.html',
-  styleUrls: ['./anketa.component.css']
+  styleUrls: ['./anketa.component.css', './nicepage.css']
 })
 export class AnketaComponent implements OnInit {
 
