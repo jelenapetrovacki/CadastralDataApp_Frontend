@@ -5,9 +5,9 @@ export class Formaa {
 	brlistanepokretnosti: string;
 	mbropstine: string;
     opstina: string;
-	mbrKatastarskeOpstine: string;
-	katastarskaOpstina: string;
-	datumAzurnosti: string;
+	mbrkatastarskeopstine: string;
+	katastarskaopstina: string;
+	datumazurnosti: string;
 	sluzba: string;
 	ulica: string;
 	brparcele: number;
@@ -25,7 +25,7 @@ export class Formaa {
 	vrstaprava2: string;
 	obliksvojine2: string;
 	udeo2: string;
-	vremePopunjavanja: string;
+	vremepopunjavanja: string;
 	greska: string;
 	redosled: number;
 	laksepopunjavanje: number;

@@ -57,23 +57,23 @@
           <form action="#" method="POST" class="u-clearfix u-form-spacing-1 u-form-vertical u-inner-form" style="padding: 14px;" source="custom" name="form">
             <div class="u-form-group u-form-name">
               <label for="name-6797" class="u-form-control-hidden u-label"></label>
-              <input type="text" id="name-6797" name="opstina" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-1" placeholder="Opština">
+              <input type="text" id="name-6797" name="opstina" ngDefaultControl [(ngModel)] = "formabNova.opstina" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-1" placeholder="Opština" required>
             </div>
             <div class="u-form-group u-form-group-2">
               <label for="text-c420" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="Matični broj opštine" id="text-c420" name="mbrOpstine" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-2">
+              <input type="text" placeholder="Matični broj opštine" id="text-c420" name="mbrOpstine" ngDefaultControl [(ngModel)] = "formabNova.mbropstine" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-2">
             </div>
             <div class="u-form-group u-form-group-3">
               <label for="text-3c6d" class="u-form-control-hidden u-label"></label>
-              <input type="text" id="text-3c6d" name="katastarskaOpstina" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-3" placeholder="Katastarska opština">
+              <input type="text" id="text-3c6d" name="katastarskaOpstina" ngDefaultControl [(ngModel)] = "formabNova.katastarskaopstina" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-3" placeholder="Katastarska opština">
             </div>
             <div class="u-form-email u-form-group">
               <label for="email-6797" class="u-form-control-hidden u-label"></label>
-              <input type="email" id="email-6797" name="mbrKatastarskeOpstine" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-4" placeholder="Matični broj katastarske opštine">
+              <input type="email" id="email-6797" name="mbrKatastarskeOpstine" ngDefaultControl [(ngModel)] = "formabNova.mbrkatastarskeopstine" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-4" placeholder="Matični broj katastarske opštine">
             </div>
             <div class="u-form-group u-form-group-5">
               <label for="text-1a24" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="Služba" id="text-1a24" name="sluzba" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-5">
+              <input type="text" placeholder="Služba" id="text-1a24" name="sluzba" ngDefaultControl [(ngModel)] = "formabNova.sluzba" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-5">
             </div>
             <div class="u-form-group u-form-group-5">
               <p>Datum ažurnosti: </p>
@@ -87,15 +87,15 @@
               <div class="u-container-style u-layout-cell u-shape-rectangle u-size-30 u-layout-cell-1">
                 <div class="u-container-layout u-container-layout-1">
                   <div class="u-form u-form-2">
-                    <form action="#" method="POST" class="u-clearfix u-form-spacing-1 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form">
+                    <form action="#" method="POST" class="u-clearfix u-form-spacing-1 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form2">
                       <div class="u-form-group u-form-group-7">
                         <label for="text-1a24" class="u-form-control-hidden u-label"></label>
-                        <input type="text" placeholder="Broj dela" id="text-1a24" name="brDela" class="u-input u-input-rectangle u-text-grey-90 u-white u-input-6">
+                        <input type="text" placeholder="Broj dela" id="text-1a24" name="brDela" ngDefaultControl [(ngModel)] = "formabNova.brdela" class="u-input u-input-rectangle u-text-grey-90 u-white u-input-6">
                       </div>
                       <div class="u-form-group u-form-select u-form-group-8">
                         <label for="select-6ddf" class="u-form-control-hidden u-label">Select</label>
                         <div class="u-form-select-wrapper">
-                          <select id="select-6ddf" name="vrstaZemljista" class="u-input u-input-rectangle u-text-grey-90 u-white u-input-7">
+                          <select id="select-6ddf" name="vrstaZemljista" ngDefaultControl [(ngModel)] = "formabNova.vrstazemljista" class="u-input u-input-rectangle u-text-grey-90 u-white u-input-7">
                             <option value="gradsko vodno zemljiste">gradsko vodno zemljiste</option>
                             <option value="gradsko poljoprivredno zemljiste">gradsko poljoprivredno zemljiste</option>
                             <option value="gradsko gradjevinsko zemljiste">gradsko gradjevinsko zemljiste</option>
@@ -107,7 +107,7 @@
                       <div class="u-form-group u-form-select u-form-group-9">
                         <label for="select-5a84" class="u-form-control-hidden u-label">Select</label>
                         <div class="u-form-select-wrapper">
-                          <select id="select-5a84" name="kultura" class="u-input u-input-rectangle u-text-grey-90 u-white u-input-8">
+                          <select id="select-5a84" name="kultura" ngDefaultControl [(ngModel)] = "formabNova.kultura" class="u-input u-input-rectangle u-text-grey-90 u-white u-input-8">
                             <option value="vrt">vrt</option>
                             <option value="vocnjak">vocnjak</option>
                             <option value="trstici i mocvare">trstici i mocvare</option>
@@ -121,7 +121,7 @@
                       </div>
                       <div class="u-form-group u-form-group-10">
                         <label for="text-3c6d" class="u-form-control-hidden u-label"></label>
-                        <input type="text" placeholder="Površina dela parcele" id="text-3c6d" name="povrsinaDela" class="u-input u-input-rectangle u-text-grey-90 u-white u-input-9">
+                        <input type="text" placeholder="Površina dela parcele" ngDefaultControl [(ngModel)] = "formabNova.povrsinadela" id="text-3c6d" name="povrsinaDela" class="u-input u-input-rectangle u-text-grey-90 u-white u-input-9">
                       </div>
 
                       <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
@@ -130,22 +130,22 @@
                     </form>
                   </div>
                   <div class="u-form u-form-3">
-                    <form action="#" method="POST" class="u-clearfix u-form-spacing-1 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form">
+                    <form action="#" method="POST" class="u-clearfix u-form-spacing-1 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form3">
                       <div class="u-form-group u-form-group-12">
                         <label for="text-1a24" class="u-form-control-hidden u-label"></label>
-                        <input type="text" placeholder="Naziv prvog vlasnika" id="text-1a24" name="vlasnik1" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-10">
+                        <input type="text" placeholder="Naziv prvog vlasnika" ngDefaultControl [(ngModel)] = "formabNova.vlasnik1" id="text-1a24" name="vlasnik1" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-10">
                       </div>
                       <div class="u-form-group u-form-group-13">
                         <label for="text-c420" class="u-form-control-hidden u-label"></label>
-                        <input type="text" id="text-c420" name="vrstaPrava1" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-11" placeholder="Vrsta prava prvog vlasnika">
+                        <input type="text" id="text-c420" name="vrstaPrava1" ngDefaultControl [(ngModel)] = "formabNova.vrstaprava1" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-11" placeholder="Vrsta prava prvog vlasnika">
                       </div>
                       <div class="u-form-group u-form-name">
                         <label for="name-6797" class="u-form-control-hidden u-label"></label>
-                        <input type="text" id="name-6797" name="oblikSvojine1" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-12" required="" placeholder="Oblik svojine prvog vlasnika">
+                        <input type="text" id="name-6797" name="oblikSvojine1" ngDefaultControl [(ngModel)] = "formabNova.obliksvojine1" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-12" required="" placeholder="Oblik svojine prvog vlasnika">
                       </div>
                       <div class="u-form-group u-form-group-15">
                         <label for="text-3c6d" class="u-form-control-hidden u-label"></label>
-                        <input type="text" placeholder="Udeo prvog vlasnika" id="text-3c6d" name="udeo1" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-13">
+                        <input type="text" placeholder="Udeo prvog vlasnika" id="text-3c6d" name="udeo1" ngDefaultControl [(ngModel)] = "formabNova.udeo1" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-13">
                       </div>
                      
                       <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
@@ -155,22 +155,22 @@
                   </div>
                   
                   <div class="u-form u-form-4">
-                    <form action="#" method="POST" class="u-clearfix u-form-spacing-1 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form">
+                    <form action="#" method="POST" class="u-clearfix u-form-spacing-1 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form4">
                       <div class="u-form-group u-form-group-17">
                         <label for="text-1a24" class="u-form-control-hidden u-label"></label>
-                        <input type="text" placeholder="Naziv drugog vlasnika" id="text-1a24" name="vlasnik2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-14">
+                        <input type="text" placeholder="Naziv drugog vlasnika" id="text-1a24" name="vlasnik2" ngDefaultControl [(ngModel)] = "formabNova.vlasnik2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-14">
                       </div>
                       <div class="u-form-group u-form-group-18">
                         <label for="text-c420" class="u-form-control-hidden u-label"></label>
-                        <input type="text" id="text-c420" name="vrstaPrava2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-15" placeholder="Vrsta prava drugog vlasnika">
+                        <input type="text" id="text-c420" name="vrstaPrava2" ngDefaultControl [(ngModel)] = "formabNova.vrstaprava2" required class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-15" placeholder="Vrsta prava drugog vlasnika">
                       </div>
                       <div class="u-form-group u-form-name">
                         <label for="name-6797" class="u-form-control-hidden u-label"></label>
-                        <input type="text" id="name-6797" name="oblikSvojine2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-16" required="" placeholder="Oblik svojine drugog vlasnika">
+                        <input type="text" id="name-6797" name="oblikSvojine2" ngDefaultControl [(ngModel)] = "formabNova.obliksvojine2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-16" required="" placeholder="Oblik svojine drugog vlasnika">
                       </div>
                       <div class="u-form-group u-form-group-20">
                         <label for="text-3c6d" class="u-form-control-hidden u-label"></label>
-                        <input type="text" placeholder="Udeo drugog vlasnika" id="text-3c6d" name="udeo2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-17">
+                        <input type="text" placeholder="Udeo drugog vlasnika" id="text-3c6d" name="udeo2" ngDefaultControl [(ngModel)] = "formabNova.udeo2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-17">
                       </div>
                       
                       <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
@@ -189,26 +189,26 @@
           </div>
         </div>
         <div class="u-form u-form-5">
-          <form action="#" method="POST" class="u-clearfix u-form-spacing-1 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form">
+          <form action="#" method="POST" class="u-clearfix u-form-spacing-1 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form5">
             <div class="u-form-group u-form-group-22">
               <label for="text-1a24" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="Broj lista nepokretnosti" id="text-1a24" name="brNepokretnosti" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-18">
+              <input type="text" placeholder="Broj lista nepokretnosti" id="text-1a24" name="brNepokretnosti" ngDefaultControl [(ngModel)] = "formabNova.brlistanepokretnosti" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-18">
             </div>
             <div class="u-form-group u-form-group-23">
               <label for="text-c420" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="Ulica" id="text-c420" name="ulica" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-19">
+              <input type="text" placeholder="Ulica" id="text-c420" name="ulica" ngDefaultControl [(ngModel)] = "formabNova.ulica" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-19">
             </div>
             <div class="u-form-group u-form-name">
               <label for="name-6797" class="u-form-control-hidden u-label"></label>
-              <input type="text" id="name-6797" name="brParcele" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-20" required="" placeholder="Broj parcele">
+              <input type="text" id="name-6797" name="brParcele" ngDefaultControl [(ngModel)] = "formabNova.brparcele" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-20" required="" placeholder="Broj parcele">
             </div>
             <div class="u-form-email u-form-group">
               <label for="email-6797" class="u-form-control-hidden u-label"></label>
-              <input type="email" id="email-6797" name="podbrParcele" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-21" required="" placeholder="Podbroj parcele">
+              <input type="email" id="email-6797" name="podbrParcele" ngDefaultControl [(ngModel)] = "formabNova.podbrparcele" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-21" required="" placeholder="Podbroj parcele">
             </div>
             <div class="u-form-group u-form-group-26">
               <label for="text-3c6d" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="Površina parcele" id="text-3c6d" name="povrsina" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-22">
+              <input type="text" placeholder="Površina parcele" id="text-3c6d" name="povrsina" ngDefaultControl [(ngModel)] = "formabNova.povrsina" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-22">
             </div>
 
             <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
@@ -222,16 +222,16 @@
           <form action="#" method="POST" class="u-clearfix u-form-horizontal u-form-spacing-10 u-inner-form" style="padding: 75px" source="custom" name="form-1">
             
             <div class="u-form-group u-form-name">
-              <label for="name-daee" class="u-form-control-hidden u-label">Name</label>
-              <input type="text" placeholder="dan" id="name-daee" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+              <label for="name-daee" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="dan"  ngDefaultControl [(ngModel)] = "preuzetDan" id="name-daee" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
             </div>
             <div class="u-form-email u-form-group">
-              <label for="email-daee" class="u-form-control-hidden u-label">Email</label>
-              <input type="email" placeholder="mesec" id="email-daee" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+              <label for="email-daee" class="u-form-control-hidden u-label"></label>
+              <input type="email" placeholder="mesec"  ngDefaultControl [(ngModel)] = "preuzetMesec" id="email-daee" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
             </div>
             <div class="u-form-group u-form-group-30">
               <label for="text-41b7" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="godina" id="text-41b7" name="text" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+              <input type="text" placeholder="godina"  ngDefaultControl [(ngModel)] = "preuzetaGodina" id="text-41b7" name="text" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
             </div>
 
             <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
@@ -241,7 +241,7 @@
         </div>
       </div>
 
-      <button [routerLink]= "['/utisci']" class="u-border-none u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-1">Završi unos</button>
+      <button (click)="addFormaB()"  class="u-border-none u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-1">Završi unos</button>
 
     </section>
     
