@@ -1,3 +1,5 @@
+import { StarosnaGrupa } from "./StarosnaGrupa";
+
 export class Korisnik {
     korisnikid: number;
     brojsati: number;
@@ -7,6 +9,6 @@ export class Korisnik {
     komentar: string;
     pol: string;
     svakodnevnokoriscenje: number;
-    starosnagrupa: number;
+    starosnagrupa: StarosnaGrupa;
 }
 

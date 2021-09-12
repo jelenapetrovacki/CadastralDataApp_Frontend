@@ -47,8 +47,8 @@
                     <span class="u-text-white">Odaberite Vaš pol</span> *
                   </p>
                   <div class="u-form u-form-1">
-                    <form action="#" method="POST" class="u-clearfix u-form-spacing-50 u-form-vertical u-inner-form" style="padding: 0px;" source="custom" name="form">
-                      <div class="u-form-group u-form-radiobutton u-form-group-1">
+                    <form action="#" method="POST" class="u-clearfix u-form-spacing-50 u-form-vertical u-inner-form" #formControl= "ngForm" style="padding: 0px;" source="custom" name="form">
+                      <div class="u-form-group u-form-radiobutton u-form-group-1" name="pol" ngDefaultControl [(ngModel)] = "korisnikNovi.pol">
                         <div class="u-form-radio-button-wrapper">
                           <input type="radio" name="pol" value="muški" required="required">
                           <label class="u-label u-label-1" for="radiobutton">muški</label>
@@ -58,58 +58,58 @@
                           <br>
                         </div>
                       </div>
-                      <div class="u-form-group u-form-radiobutton u-form-group-2">
+                      <div class="u-form-group u-form-radiobutton u-form-group-2" name="starosnaGrupa" ngDefaultControl [(ngModel)] = "sGrID">
                         <div class="u-form-radio-button-wrapper">
-                          <input type="radio" name="starosnaGrupa" value="0 - 15" required="required">
-                          <label class="u-label u-label-3" for="radiobutton">0 - 15</label>
+                          <input type="radio" name="starosnaGrupa" value=1 required="required">
+                          <label class="u-label u-label-3" for="radiobutton">1 - 20</label>
                           <br>
-                          <input type="radio" name="starosnaGrupa" value="16 - 19" required="required">
-                          <label class="u-label u-label-4" for="radiobutton">16 - 19</label>
+                          <input type="radio" name="starosnaGrupa" value=2 required="required">
+                          <label class="u-label u-label-4" for="radiobutton">21 - 30</label>
                           <br>
-                          <input type="radio" name="starosnaGrupa" value="20 - 25" required="required">
-                          <label class="u-label u-label-5" for="radiobutton">20 - 25</label>
+                          <input type="radio" name="starosnaGrupa" value=3 required="required">
+                          <label class="u-label u-label-5" for="radiobutton">31 - 40</label>
                           <br>
-                          <input type="radio" name="starosnaGrupa" value="25 - 35" required="required">
-                          <label class="u-label u-label-6" for="radiobutton">25 - 35</label>
+                          <input type="radio" name="starosnaGrupa" value=4 required="required">
+                          <label class="u-label u-label-6" for="radiobutton">41 - 50</label>
                           <br>
-                          <input type="radio" name="starosnaGrupa" value="35 - 55" required="required">
-                          <label class="u-label u-label-7" for="radiobutton">35 - 55</label>
+                          <input type="radio" name="starosnaGrupa" value=5 required="required">
+                          <label class="u-label u-label-7" for="radiobutton">51 - 60</label>
                           <br>
-                          <input type="radio" name="starosnaGrupa" value="više od 55" required="required">
-                          <label class="u-label u-label-8" for="radiobutton">više od 55</label>
+                          <input type="radio" name="starosnaGrupa" value=6 required="required">
+                          <label class="u-label u-label-8" for="radiobutton">više od 60</label>
                           <br>
                         </div>
                       </div>
-                      <div class="u-form-group u-form-group-3">
+                      <div class="u-form-group u-form-group-3" name="iskustvaracunar" ngDefaultControl [(ngModel)] = "korisnikNovi.iskustvaracunar">
                         <label for="text-3ccb" class="u-form-control-hidden u-label u-label-9"></label>
-                        <input type="text" id="text-3ccb" name="iskustvaRacunar" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                        <input type="text" id="text-3ccb" name="iskustvaRacunar" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
                       </div>
-                      <div class="u-form-group u-form-group-4">
+                      <div class="u-form-group u-form-group-4" name="brojsati" ngDefaultControl [(ngModel)] = "korisnikNovi.brojsati">
                         <label for="text-312b" class="u-form-control-hidden u-label u-label-10"></label>
-                        <input type="text" placeholder="" id="text-312b" name="brojSati" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required">
+                        <input type="text" placeholder="" id="text-312b" name="brojSati" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
                       </div>
-                      <div class="u-form-group u-form-radiobutton u-form-group-5">
+                      <div class="u-form-group u-form-radiobutton u-form-group-5" name="svakodnevnoKoriscenje" ngDefaultControl [(ngModel)] = "korisnikNovi.svakodnevnokoriscenje">
                         <div class="u-form-radio-button-wrapper">
-                          <input type="radio" name="svakodnevnoKoriscenje" value="Da" required="required">
+                          <input type="radio" name="svakodnevnoKoriscenje" value=1 required="required">
                           <label class="u-label u-label-11" for="radiobutton">Da</label>
                           <br>
-                          <input type="radio" name="svakodnevnoKoriscenje" value="Ne" required="required">
+                          <input type="radio" name="svakodnevnoKoriscenje" value=0 required="required">
                           <label class="u-label u-label-12" for="radiobutton">Ne</label>
                           <br>
                         </div>
                       </div>
-                      <div class="u-form-group u-form-radiobutton u-form-group-6">
+                      <div class="u-form-group u-form-radiobutton u-form-group-6" name="iskustvakatastar" ngDefaultControl [(ngModel)] = "korisnikNovi.iskustvakatastar">
                         <div class="u-form-radio-button-wrapper">
-                          <input type="radio" name="radiobutton" value="Da">
+                          <input type="radio" name="radiobutton" value=1>
                           <label class="u-label u-label-13" for="radiobutton">Da</label>
                           <br>
-                          <input type="radio" name="radiobutton" value="Ne">
+                          <input type="radio" name="radiobutton" value=0>
                           <label class="u-label u-label-14" for="radiobutton">Ne</label>
                           <br>
                         </div>
                       </div>
                       <div class="u-align-left u-form-group u-form-submit">
-                        <button [routerLink]="['/formaA']" class="u-active-palette-2-light-3 u-border-none u-btn u-btn-submit u-button-style u-hover-palette-2-light-3 u-text-active-black u-text-hover-black u-text-palette-2-base u-white u-btn-1">Potvrdi</button>
+                        <button (click) = "add()" class="u-active-palette-2-light-3 u-border-none u-btn u-btn-submit u-button-style u-hover-palette-2-light-3 u-text-active-black u-text-hover-black u-text-palette-2-base u-white u-btn-1" [disabled]="!formControl.valid">Potvrdi</button>
                         <input type="submit" value="submit" class="u-form-control-hidden" wfd-invisible="true">
                       </div>
                       <div class="u-form-send-message u-form-send-success" wfd-invisible="true"> Thank you! Your message has been sent. </div>

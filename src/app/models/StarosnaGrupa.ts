@@ -1,5 +1,5 @@
 export class StarosnaGrupa {
-    starosnagrupaid: number;
+    idstarosnagrupa: number;
 
 	donjagr: number;
 
