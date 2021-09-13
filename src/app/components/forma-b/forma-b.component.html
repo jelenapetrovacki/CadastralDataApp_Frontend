@@ -51,209 +51,170 @@
         </div>
       </div>
     </section>
-    <section class="u-clearfix u-grey-10 u-section-2" id="sec-a9b2">
+    <section class="u-clearfix u-grey-10 u-section-2" id="sec-7cc1">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-form u-form-1">
-          <form action="#" method="POST" class="u-clearfix u-form-spacing-1 u-form-vertical u-inner-form" style="padding: 14px;" source="custom" name="form">
-            <div class="u-form-group u-form-name">
+          <form action="#" method="POST" class="u-clearfix u-form-spacing-1 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form">
+            <div class="u-form-group">
               <label for="name-6797" class="u-form-control-hidden u-label"></label>
-              <input type="text" id="name-6797" name="opstina" ngDefaultControl [(ngModel)] = "formabNova.opstina" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-1" placeholder="Opština" required>
+              <input id="name-6797" name="opstina" ngDefaultControl [(ngModel)] = "formabNova.opstina" class="u-border-1 u-border-grey-25 u-input u-input-rectangle u-text-grey-90 u-white u-input-1" placeholder="Opština" type="text">
             </div>
             <div class="u-form-group u-form-group-2">
               <label for="text-c420" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="Matični broj opštine" id="text-c420" name="mbrOpstine" ngDefaultControl [(ngModel)] = "formabNova.mbropstine" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-2">
+              <input type="text" placeholder="Matični broj opštine" id="text-c420" name="mbrOpstine" ngDefaultControl [(ngModel)] = "formabNova.mbropstine" class="u-border-1 u-border-grey-25 u-input u-input-rectangle u-text-grey-90 u-white u-input-2">
             </div>
             <div class="u-form-group u-form-group-3">
               <label for="text-3c6d" class="u-form-control-hidden u-label"></label>
-              <input type="text" id="text-3c6d" name="katastarskaOpstina" ngDefaultControl [(ngModel)] = "formabNova.katastarskaopstina" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-3" placeholder="Katastarska opština">
+              <input type="text" id="text-3c6d" name="katastarskaOpstina" ngDefaultControl [(ngModel)] = "formabNova.katastarskaopstina" class="u-border-1 u-border-grey-25 u-input u-input-rectangle u-text-grey-90 u-white u-input-3" placeholder="Katastarska opština">
             </div>
-            <div class="u-form-email u-form-group">
+            <div class="u-form-group">
               <label for="email-6797" class="u-form-control-hidden u-label"></label>
-              <input type="email" id="email-6797" name="mbrKatastarskeOpstine" ngDefaultControl [(ngModel)] = "formabNova.mbrkatastarskeopstine" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-4" placeholder="Matični broj katastarske opštine">
+              <input type="text" id="email-6797" name="mbrKatastarskeOpstine" ngDefaultControl [(ngModel)] = "formabNova.mbrkatastarskeopstine" class="u-border-1 u-border-grey-25 u-input u-input-rectangle u-text-grey-90 u-white u-input-4" placeholder="Matični broj katastarske opštine">
             </div>
             <div class="u-form-group u-form-group-5">
               <label for="text-1a24" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="Služba" id="text-1a24" name="sluzba" ngDefaultControl [(ngModel)] = "formabNova.sluzba" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-5">
+              <input type="text" placeholder="Služba" id="text-1a24" name="sluzba" ngDefaultControl [(ngModel)] = "formabNova.sluzba" class="u-border-1 u-border-grey-25 u-input u-input-rectangle u-text-grey-90 u-white u-input-5">
             </div>
-            <div class="u-form-group u-form-group-5">
-              <p>Datum ažurnosti: </p>
-            </div>
-
-          </form>
-        </div>
-        <div class="u-clearfix u-expanded-width u-gutter-12 u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout">
-            <div class="u-layout-row">
-              <div class="u-container-style u-layout-cell u-shape-rectangle u-size-30 u-layout-cell-1">
-                <div class="u-container-layout u-container-layout-1">
-                  <div class="u-form u-form-2">
-                    <form action="#" method="POST" class="u-clearfix u-form-spacing-1 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form2">
-                      <div class="u-form-group u-form-group-7">
-                        <label for="text-1a24" class="u-form-control-hidden u-label"></label>
-                        <input type="text" placeholder="Broj dela" id="text-1a24" name="brDela" ngDefaultControl [(ngModel)] = "formabNova.brdela" class="u-input u-input-rectangle u-text-grey-90 u-white u-input-6">
-                      </div>
-                      <div class="u-form-group u-form-select u-form-group-8">
-                        <label for="select-6ddf" class="u-form-control-hidden u-label">Select</label>
-                        <div class="u-form-select-wrapper">
-                          <select id="select-6ddf" name="vrstaZemljista" ngDefaultControl [(ngModel)] = "formabNova.vrstazemljista" class="u-input u-input-rectangle u-text-grey-90 u-white u-input-7">
-                            <option value="gradsko vodno zemljiste">gradsko vodno zemljiste</option>
-                            <option value="gradsko poljoprivredno zemljiste">gradsko poljoprivredno zemljiste</option>
-                            <option value="gradsko gradjevinsko zemljiste">gradsko gradjevinsko zemljiste</option>
-                            <option value="gradsko sumsko zemljiste">gradsko sumsko zemljiste</option>
-                          </select>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
-                        </div>
-                      </div>
-                      <div class="u-form-group u-form-select u-form-group-9">
-                        <label for="select-5a84" class="u-form-control-hidden u-label">Select</label>
-                        <div class="u-form-select-wrapper">
-                          <select id="select-5a84" name="kultura" ngDefaultControl [(ngModel)] = "formabNova.kultura" class="u-input u-input-rectangle u-text-grey-90 u-white u-input-8">
-                            <option value="vrt">vrt</option>
-                            <option value="vocnjak">vocnjak</option>
-                            <option value="trstici i mocvare">trstici i mocvare</option>
-                            <option value="livada">livada</option>
-                            <option value="zemljiste pod zgradom i drugim objektom">zemljiste pod zgradom i drugim objektom</option>
-                            <option value="suma">suma</option>
-                            <option value="njiva">njiva</option>
-                          </select>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
-                        </div>
-                      </div>
-                      <div class="u-form-group u-form-group-10">
-                        <label for="text-3c6d" class="u-form-control-hidden u-label"></label>
-                        <input type="text" placeholder="Površina dela parcele" ngDefaultControl [(ngModel)] = "formabNova.povrsinadela" id="text-3c6d" name="povrsinaDela" class="u-input u-input-rectangle u-text-grey-90 u-white u-input-9">
-                      </div>
-
-                      <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
-                      <div class="u-form-send-error u-form-send-message">Unable to send your message. Please fix errors then try again.</div>
-                      <input type="hidden" value="" name="recaptchaResponse">
-                    </form>
-                  </div>
-                  <div class="u-form u-form-3">
-                    <form action="#" method="POST" class="u-clearfix u-form-spacing-1 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form3">
-                      <div class="u-form-group u-form-group-12">
-                        <label for="text-1a24" class="u-form-control-hidden u-label"></label>
-                        <input type="text" placeholder="Naziv prvog vlasnika" ngDefaultControl [(ngModel)] = "formabNova.vlasnik1" id="text-1a24" name="vlasnik1" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-10">
-                      </div>
-                      <div class="u-form-group u-form-group-13">
-                        <label for="text-c420" class="u-form-control-hidden u-label"></label>
-                        <input type="text" id="text-c420" name="vrstaPrava1" ngDefaultControl [(ngModel)] = "formabNova.vrstaprava1" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-11" placeholder="Vrsta prava prvog vlasnika">
-                      </div>
-                      <div class="u-form-group u-form-name">
-                        <label for="name-6797" class="u-form-control-hidden u-label"></label>
-                        <input type="text" id="name-6797" name="oblikSvojine1" ngDefaultControl [(ngModel)] = "formabNova.obliksvojine1" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-12" required="" placeholder="Oblik svojine prvog vlasnika">
-                      </div>
-                      <div class="u-form-group u-form-group-15">
-                        <label for="text-3c6d" class="u-form-control-hidden u-label"></label>
-                        <input type="text" placeholder="Udeo prvog vlasnika" id="text-3c6d" name="udeo1" ngDefaultControl [(ngModel)] = "formabNova.udeo1" class="u-border-1 u-border-white u-input u-input-rectangle u-text-grey-90 u-white u-input-13">
-                      </div>
-                     
-                      <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
-                      <div class="u-form-send-error u-form-send-message">Unable to send your message. Please fix errors then try again.</div>
-                      <input type="hidden" value="" name="recaptchaResponse">
-                    </form>
-                  </div>
-                  
-                  <div class="u-form u-form-4">
-                    <form action="#" method="POST" class="u-clearfix u-form-spacing-1 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form4">
-                      <div class="u-form-group u-form-group-17">
-                        <label for="text-1a24" class="u-form-control-hidden u-label"></label>
-                        <input type="text" placeholder="Naziv drugog vlasnika" id="text-1a24" name="vlasnik2" ngDefaultControl [(ngModel)] = "formabNova.vlasnik2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-14">
-                      </div>
-                      <div class="u-form-group u-form-group-18">
-                        <label for="text-c420" class="u-form-control-hidden u-label"></label>
-                        <input type="text" id="text-c420" name="vrstaPrava2" ngDefaultControl [(ngModel)] = "formabNova.vrstaprava2" required class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-15" placeholder="Vrsta prava drugog vlasnika">
-                      </div>
-                      <div class="u-form-group u-form-name">
-                        <label for="name-6797" class="u-form-control-hidden u-label"></label>
-                        <input type="text" id="name-6797" name="oblikSvojine2" ngDefaultControl [(ngModel)] = "formabNova.obliksvojine2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-16" required="" placeholder="Oblik svojine drugog vlasnika">
-                      </div>
-                      <div class="u-form-group u-form-group-20">
-                        <label for="text-3c6d" class="u-form-control-hidden u-label"></label>
-                        <input type="text" placeholder="Udeo drugog vlasnika" id="text-3c6d" name="udeo2" ngDefaultControl [(ngModel)] = "formabNova.udeo2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-17">
-                      </div>
-                      
-                      <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
-                      <div class="u-form-send-error u-form-send-message">Unable to send your message. Please fix errors then try again.</div>
-                      <input type="hidden" value="" name="recaptchaResponse">
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <div class="u-container-style u-layout-cell u-shape-rectangle u-size-30 u-layout-cell-2">
-                <div class="u-container-layout u-container-layout-2">
-                  <h4 class="u-text u-text-palette-1-base u-text-2">Podaci o vlasnicima parcele</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="u-form u-form-5">
-          <form action="#" method="POST" class="u-clearfix u-form-spacing-1 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form5">
-            <div class="u-form-group u-form-group-22">
-              <label for="text-1a24" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="Broj lista nepokretnosti" id="text-1a24" name="brNepokretnosti" ngDefaultControl [(ngModel)] = "formabNova.brlistanepokretnosti" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-18">
-            </div>
-            <div class="u-form-group u-form-group-23">
-              <label for="text-c420" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="Ulica" id="text-c420" name="ulica" ngDefaultControl [(ngModel)] = "formabNova.ulica" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-19">
-            </div>
-            <div class="u-form-group u-form-name">
-              <label for="name-6797" class="u-form-control-hidden u-label"></label>
-              <input type="text" id="name-6797" name="brParcele" ngDefaultControl [(ngModel)] = "formabNova.brparcele" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-20" required="" placeholder="Broj parcele">
-            </div>
-            <div class="u-form-email u-form-group">
-              <label for="email-6797" class="u-form-control-hidden u-label"></label>
-              <input type="email" id="email-6797" name="podbrParcele" ngDefaultControl [(ngModel)] = "formabNova.podbrparcele" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-21" required="" placeholder="Podbroj parcele">
-            </div>
-            <div class="u-form-group u-form-group-26">
-              <label for="text-3c6d" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="Površina parcele" id="text-3c6d" name="povrsina" ngDefaultControl [(ngModel)] = "formabNova.povrsina" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-22">
-            </div>
-
             <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
             <div class="u-form-send-error u-form-send-message">Unable to send your message. Please fix errors then try again.</div>
             <input type="hidden" value="" name="recaptchaResponse">
-
           </form>
         </div>
-
-        <div class="u-form u-form-6">
-          <form action="#" method="POST" class="u-clearfix u-form-horizontal u-form-spacing-10 u-inner-form" style="padding: 75px" source="custom" name="form-1">
-            
+        <div class="u-form u-form-2">
+          <form action="#" method="POST" class="u-clearfix u-form-spacing-1 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form-3">
+            <div class="u-form-group">
+              <label for="text-1a24" class="u-form-control-hidden u-label"></label>
+              <input placeholder="Broj dela" id="text-1a24" name="brDela" ngDefaultControl [(ngModel)] = "formabNova.brdela" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-6" type="text">
+            </div>
+            <div class="u-form-group u-form-select u-form-group-8">
+              <label for="select-6ddf" class="u-form-control-hidden u-label">Select</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-6ddf" name="vrstaZemljista" ngDefaultControl [(ngModel)] = "formabNova.vrstazemljista" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-7">
+				  <option value="" disabled selected>Odaberite vrstu zemljišta</option>
+                  <option value="gradsko vodno zemljiste">gradsko vodno zemljiste</option>
+                  <option value="gradsko poljoprivredno zemljiste">gradsko poljoprivredno zemljiste</option>
+                  <option value="gradsko gradjevinsko zemljiste">gradsko gradjevinsko zemljiste</option>
+                  <option value="gradsko sumsko zemljiste">gradsko sumsko zemljiste</option>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-select u-form-group-9">
+              <label for="select-5a84" class="u-form-control-hidden u-label">Select</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-5a84" name="kultura" ngDefaultControl [(ngModel)] = "formabNova.kultura" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-8">
+				  <option value="" disabled selected>Odaberite kulturu zemljišta</option>
+                  <option value="vrt">vrt</option>
+                  <option value="vocnjak">vocnjak</option>
+                  <option value="trstici i mocvare">trstici i mocvare</option>
+                  <option value="livada">livada</option>
+                  <option value="zemljiste pod zgradom i drugim objektom">zemljiste pod zgradom i drugim objektom</option>
+                  <option value="suma">suma</option>
+                  <option value="njiva">njiva</option>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-group-10">
+              <label for="text-3c6d" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Površina dela parcele" id="text-3c6d" name="povrsinaDela" ngDefaultControl [(ngModel)] = "formabNova.povrsinadela" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-9">
+            </div>
+          </form>
+        </div>
+        <h4 class="u-text u-text-palette-1-base u-text-2">Podaci o vlasnicima parcele</h4>
+		<p class="u-text u-text-1">Datum ažurnosti:</p>
+        <div class="u-form u-form-3">
+          <form action="#" method="POST" class="u-clearfix u-form-horizontal u-form-spacing-10 u-inner-form" style="padding: 10px" source="custom" name="form-1">
             <div class="u-form-group u-form-name">
-              <label for="name-daee" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="dan"  ngDefaultControl [(ngModel)] = "preuzetDan" id="name-daee" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+              <input type="text" placeholder="dan" id="name-daee" name="name" ngDefaultControl [(ngModel)] = "preuzetDan" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
             </div>
             <div class="u-form-email u-form-group">
-              <label for="email-daee" class="u-form-control-hidden u-label"></label>
-              <input type="email" placeholder="mesec"  ngDefaultControl [(ngModel)] = "preuzetMesec" id="email-daee" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+              <input type="email" placeholder="mesec" id="email-daee" name="email" ngDefaultControl [(ngModel)] = "preuzetMesec" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+            </div>
+            <div class="u-form-group u-form-group-14">
+              <input type="text" placeholder="godina" id="text-41b7" name="text" ngDefaultControl [(ngModel)] = "preuzetaGodina" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+            </div>
+          </form>
+        </div>
+        <div class="u-form u-form-4">
+          <form action="#" method="POST" class="u-clearfix u-form-spacing-1 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form-2">
+            <div class="u-form-group u-form-group-16">
+              <label for="text-1a24" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Broj lista nepokretnosti" id="text-1a24" name="brNepokretnosti" ngDefaultControl [(ngModel)] = "formabNova.brlistanepokretnosti" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-13">
+            </div>
+            <div class="u-form-group u-form-group-17">
+              <label for="text-c420" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Ulica" id="text-c420" name="ulica" ngDefaultControl [(ngModel)] = "formabNova.ulica" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-14">
+            </div>
+            <div class="u-form-group u-form-name">
+              <label for="name-6797" class="u-form-control-hidden u-label"></label>
+              <input type="text" id="name-6797" name="brParcele" ngDefaultControl [(ngModel)] = "formabNova.brparcele" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-15" required="" placeholder="Broj parcele">
+            </div>
+            <div class="u-form-email u-form-group">
+              <label for="email-6797" class="u-form-control-hidden u-label"></label>
+              <input type="email" id="email-6797" name="podbrParcele" ngDefaultControl [(ngModel)] = "formabNova.podbrparcele" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-16" required="" placeholder="Podbroj parcele">
+            </div>
+            <div class="u-form-group u-form-group-20">
+              <label for="text-3c6d" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Površina parcele" id="text-3c6d" name="povrsina" ngDefaultControl [(ngModel)] = "formabNova.povrsina" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-black u-white u-input-17">
+            </div>
+          </form>
+        </div>
+        <div class="u-form u-form-5">
+          <form action="#" method="POST" class="u-clearfix u-form-spacing-1 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form-4">
+            <div class="u-form-group u-form-group-22">
+              <label for="text-1a24" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Naziv prvog vlasnika" id="text-1a24" name="vlasnik1" ngDefaultControl [(ngModel)] = "formabNova.vlasnik1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-18">
+            </div>
+            <div class="u-form-group u-form-group-23">
+              <label for="text-c420" class="u-form-control-hidden u-label"></label>
+              <input id="text-c420" name="vrstaPrava1" ngDefaultControl [(ngModel)] = "formabNova.vrstaprava1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-19" placeholder="Vrsta prava prvog vlasnika" type="text">
+            </div>
+            <div class="u-form-group">
+              <label for="name-6797" class="u-form-control-hidden u-label"></label>
+              <input type="text" id="name-6797" name="oblikSvojine1" ngDefaultControl [(ngModel)] = "formabNova.obliksvojine1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-20" required="required" placeholder="Oblik svojine prvog vlasnika">
+            </div>
+            <div class="u-form-group u-form-group-25">
+              <label for="text-3c6d" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Udeo prvog vlasnika" id="text-3c6d" name="udeo1" ngDefaultControl [(ngModel)] = "formabNova.udeo1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-21">
+            </div>
+          </form>
+        </div>
+        <div class="u-form u-form-6">
+          <form action="#" method="POST" class="u-clearfix u-form-spacing-1 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form-5">
+            <div class="u-form-group u-form-group-27">
+              <label for="text-1a24" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Naziv drugog vlasnika" id="text-1a24" name="vlasnik2" ngDefaultControl [(ngModel)] = "formabNova.vlasnik2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-22">
+            </div>
+            <div class="u-form-group u-form-group-28">
+              <label for="text-c420" class="u-form-control-hidden u-label"></label>
+              <input type="text" id="text-c420" name="vrstaPrava2" ngDefaultControl [(ngModel)] = "formabNova.vrstaprava2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-23" placeholder="Vrsta prava drugog vlasnika">
+            </div>
+            <div class="u-form-group u-form-name">
+              <label for="name-6797" class="u-form-control-hidden u-label"></label>
+              <input type="text" id="name-6797" name="oblikSvojine2" ngDefaultControl [(ngModel)] = "formabNova.obliksvojine2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-24" required="" placeholder="Oblik svojine drugog vlasnika">
             </div>
             <div class="u-form-group u-form-group-30">
-              <label for="text-41b7" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="godina"  ngDefaultControl [(ngModel)] = "preuzetaGodina" id="text-41b7" name="text" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+              <label for="text-3c6d" class="u-form-control-hidden u-label"></label>
+              <input type="text" placeholder="Udeo drugog vlasnika" id="text-3c6d" name="udeo2" ngDefaultControl [(ngModel)] = "formabNova.udeo2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-text-grey-90 u-white u-input-25">
             </div>
-
-            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-            <input type="hidden" value="" name="recaptchaResponse">
           </form>
         </div>
       </div>
-
-      <button (click)="addFormaB()"  class="u-border-none u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-1">Završi unos</button>
-
+      <div class="container">
+        <div class="center">
+          <button (click)="addFormaB()"  class="u-border-none u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-1">Završi unos</button>
+        </div>
+      </div>
     </section>
     
     
     <footer class="u-align-center u-clearfix u-footer u-grey-10 u-footer" id="sec-9b4d"><div class="u-clearfix u-sheet u-sheet-1"></div></footer>
     <section class="u-backlink u-clearfix u-grey-80">
-      
-     
       <p class="u-text">
         <span>Septembar, 2021.</span>
       </p>
-    
+ 
     </section>
   </body>
 </html>
