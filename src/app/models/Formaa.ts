@@ -30,5 +30,5 @@ export class Formaa {
 	redosled: number;
 	laksepopunjavanje: number;
 	vizuelniutisak: number;
-	idkorisnik: Korisnik;
+	korisnik: Korisnik;
 }

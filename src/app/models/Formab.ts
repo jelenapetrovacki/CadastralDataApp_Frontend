@@ -30,5 +30,5 @@ export class Formab {
 	redosled: number;
 	laksepopunjavanje: number;
 	vizuelniutisak: number;
-	idkorisnik: Korisnik;
+	korisnik: Korisnik;
 }

@@ -3,6 +3,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Formab } from 'src/app/models/Formab';
 import { FormaBService } from 'src/app/services/forma-b.service';
+import { KorisnikService } from 'src/app/services/korisnik.service';
 import { StateService } from 'src/app/services/state.service';
 
 
@@ -29,7 +30,8 @@ export class FormaBComponent implements OnInit, OnDestroy {
 
   constructor(private formabService: FormaBService,
     public router: Router,
-    private stateService: StateService) { }
+    private stateService: StateService,
+    private korisnikService: KorisnikService) { }
 
   ngOnDestroy(): void {
     clearInterval(this.timerRef);
@@ -70,9 +72,18 @@ export class FormaBComponent implements OnInit, OnDestroy {
     if (this.preuzetaGodina == undefined) this.preuzetaGodina = 0;
     this.formabNova.datumazurnosti = this.preuzetDan + '.' + this.preuzetMesec + '.' + this.preuzetaGodina + '.'; 
     console.log(this.formabNova.datumazurnosti + ' datum');
-    this.formabService.addFormaB(this.formabNova).subscribe(()=>{
-      console.log(this.formabNova);
-    });
+
+    this.korisnikid=this.stateService.idKorisnik;
+    this.stateService.idKorisnik=this.korisnikid;
+
+    
+    this.korisnikService.getKorisnikByID(this.korisnikid).subscribe((korisnikVracenPoIDu)=>{
+      this.formabNova.korisnik=korisnikVracenPoIDu;
+      this.formabService.addFormaB(this.formabNova).subscribe(forma => {
+        console.log(forma);
+      });
+    }); 
+
     console.log(this.counter);
     this.clearTimer();
 

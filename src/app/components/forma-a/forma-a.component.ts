@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { Formaa } from 'src/app/models/Formaa';
 import { FormaAService } from 'src/app/services/forma-a.service';
+import { KorisnikService } from 'src/app/services/korisnik.service';
 import { StateService } from 'src/app/services/state.service';
 
 @Component({
@@ -25,10 +26,11 @@ export class FormaAComponent implements OnInit, OnDestroy {
   subscription: Subscription;
   constructor(private formaaService: FormaAService,
     public router: Router,
-    private stateService: StateService) { }
+    private stateService: StateService,
+    private korisnikService: KorisnikService) { }
 
   ngOnDestroy(): void {
-    this.subscription.unsubscribe();
+    
     clearInterval(this.timerRef);
   }
   ngOnInit(): void {
@@ -63,10 +65,19 @@ export class FormaAComponent implements OnInit, OnDestroy {
   public addFormaA() {
 
     this.formaaNova.vremepopunjavanja = (this.counter / 1000) + ' s';
-    
-    this.subscription = this.formaaService.addFormaA(this.formaaNova).subscribe(() => {
-      console.log(this.formaaNova);
-    });
+
+    this.korisnikid=this.stateService.idKorisnik;
+    this.stateService.idKorisnik=this.korisnikid;
+
+
+    this.korisnikService.getKorisnikByID(this.korisnikid).subscribe((korisnikVracenPoIDu)=>{
+      this.formaaNova.korisnik=korisnikVracenPoIDu;
+      this.formaaService.addFormaA(this.formaaNova).subscribe(forma => {
+        console.log(forma);
+      });
+    }); 
+
+  
     console.log(this.counter);
     this.clearTimer();
     console.log('A potvrda - Korisnik ID: ' + this.korisnikid);

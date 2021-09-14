@@ -39,17 +39,23 @@ export class AnketaComponent implements OnInit {
     //this.korisnikNovi.iskustvakatastar = 0;
     //this.korisnikNovi.svakodnevnokoriscenje =0;
     this.korisnikNovi.komentar = "";
+  if(this.sGrID != null) {
     this.starosnaGrupaService.getStarosnaGrByID(this.sGrID).subscribe(starosnaGrupaVracena => {
       this.korisnikNovi.starosnagrupa = starosnaGrupaVracena;
       console.log(this.korisnikNovi.starosnagrupa);
+      this.korisnikService.addKorisnik(this.korisnikNovi).subscribe(korisnikID  => {
+        console.log(this.korisnikNovi);
+        this.stateService.idKorisnik=korisnikID; 
+      })
     })
+  } else {
+    this.korisnikService.addKorisnik(this.korisnikNovi).subscribe(korisnikID  => {
+      this.stateService.idKorisnik=korisnikID; 
+    })
+  }
+      
 
-    this.korisnikService.addKorisnik(this.korisnikNovi).subscribe(() => {
-      console.log(this.korisnikNovi);
-    }),
-      (error: Error) => {
-
-    }
+    
 
     if (this.korisnikNovi.izabranaforma == "formaA") {
       this.stateService.idKorisnik = this.korisnikNovi.korisnikid;

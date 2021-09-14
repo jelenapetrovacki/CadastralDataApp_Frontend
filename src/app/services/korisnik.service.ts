@@ -9,11 +9,16 @@ import { Korisnik } from '../models/Korisnik';
 })
 export class KorisnikService {
 
+
   constructor(private httpClient: HttpClient) { }
 
   public addKorisnik(korisnik: Korisnik) : Observable<any> {
     korisnik.korisnikid = 0;
     return this.httpClient.post(`${KORISNIK_ID_URL}`, korisnik);
+  }
+
+  public getKorisnikByID(korisnikid: number) : Observable<any> {
+    return this.httpClient.get(`${KORISNIK_ID_URL}/${korisnikid}`);
   }
   
 }
